@@ -1,20 +1,25 @@
-*** OH-TWN simulator project files ***
+OH-TWN Flight Simulator 
+=======================
 
-Mostly this is just a custom instrument panel intended to run a separate screen. 
+This project exists to develop a flight training device based on FlightGear 
+flight simulator. Requires FlightGear 2.4 or later to work, the required 
+fgpanel application is not necessarily part of the official windows build 
+of flightgear.
 
-Usage:
+This is based very heavily on the work of Torsten Dreyer in the SenecaII panel. 
 
-1. Put Panel1Protocol into your "Protocol" folder inside fgdata.
+PANEL - see Panel-folder.
 
-2. run fgfs --generic=socket,out,24,localhost,34200,udp,Panel1Protocol &
+  This is a custom fullscreen instrument panel for the SenecaII aircraft in flightgear.
 
-3. Symlink the "OH-TWN"-folder next to the other aircraft in fgfs.
+  Usage:
 
-3. run fgpanel --panel=Aircraft/OH-TWN/Panels/Panel1.xml
-   --fg-root=/path/to/fgdata
-
+  1. Put Panel1Protocol into your "Protocol" folder inside fgdata.
+  2. Symlink the "OH-TWN"-folder next to the other aircraft in fgfs.
+  3. run fgfs --generic=socket,out,24,localhost,34200,udp,Panel1Protocol
+  4. run fgpanel --panel=Aircraft/OH-TWN/Panels/Panel1.xml --fg-root=/path/to/fgdata
 
 TODO:
-   - the protocol needs to be reviewed, likely some properties are
-     missing and also some are likely not used. Make sure we actually transmit the 
-     variables/values we use.
+   - the protocol needs to be revised, as it is just the one from SenecaII 
+     trainer panel. Likely some properties are missing and some are likely 
+     not used. Make sure we actually transmit the variables/values we use.
