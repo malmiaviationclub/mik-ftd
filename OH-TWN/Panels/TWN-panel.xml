@@ -1,0 +1,259 @@
+<?xml version="1.0"?>
+<!--
+    Piper Seneca II panel for Malmi Aviation Club twin engine trainer simulator.
+    Derived from the SenecaII panel in FlightGear, depends on those instruments.
+
+    The following changes have been done so far:
+
+    - Layout re-done for 4:3 aspect ratio
+    - RPM gauge modified for a dual-needle to save panel space
+
+    Currently this is very much work in progress.
+
+    TODO: SenecaV -style small engine gauges that fit in the 
+          Beech Baron panel cutouts would be good.
+
+    Tuomas Kuosmanen
+-->
+
+<PropertyList>
+    <params>
+      <!-- big cutouts are in a 3x3 grid -->
+      <row-1>214</row-1>
+      <row-2>134</row-2>
+      <row-3>54</row-3>
+      <row-4>32</row-4>
+
+      <col-1>42</col-1>
+      <col-2>126</col-2>
+      <col-3>210</col-3>
+      <col-4>294</col-4>
+
+      <!-- engine two columns -->
+      <eng-col-1>276</eng-col-1>
+      <eng-col-2>318</eng-col-2>
+
+      <eng-row-1>230</eng-row-1>
+      <eng-row-2>190</eng-row-2>
+      <eng-row-3>150</eng-row-3>
+      <eng-row-4>110</eng-row-4>
+      <eng-row-5>70</eng-row-5>
+      <eng-row-6>50</eng-row-6>
+
+
+      <col-r1>385</col-r1>
+      <col-r2>463</col-r2>
+      <col-r3>545</col-r3>
+      <col-r4>627</col-r4>
+
+      <radio-col>603</radio-col>
+
+      <size-1>80</size-1>
+      <size-2>38</size-2>
+    </params>
+
+    <name>SenecaII IFR Panel</name>
+    <!-- OH-TWN has a 17" tft for instrument panel if I remember correctly... -->
+    <w>338</w>
+    <h>253</h>
+
+    <instruments>
+
+        <instrument include="Aircraft/SenecaII/Panels/fps.xml">
+            <name>frames per second</name>
+            <x>20</x>
+            <y>0</y>
+            <w>20</w>
+            <h>20</h>
+        </instrument>
+
+        <!-- left half -->
+
+        <instrument include="Aircraft/SenecaII/Panels/Airspeed.xml">
+            <name>Airspeed Indicator</name>
+            <x alias="../../../params/col-1"/>
+            <y alias="../../../params/row-1"/>
+            <w alias="../../../params/size-1"/>
+            <h alias="../../../params/size-1"/>
+        </instrument>
+
+        <instrument include="Aircraft/Instruments/ati-c172s.xml">
+            <name>Attitude Gyro</name>
+            <x alias="../../../params/col-2"/>
+            <y alias="../../../params/row-1"/>
+            <w alias="../../../params/size-1"/>
+            <h alias="../../../params/size-1"/>
+        </instrument>
+
+        <instrument include="Aircraft/Instruments/alt-c172s.xml">
+            <name>Altimeter</name>
+            <x alias="../../../params/col-3"/>
+            <y alias="../../../params/row-1"/>
+            <w alias="../../../params/size-1"/>
+            <h alias="../../../params/size-1"/>
+        </instrument>
+
+        <instrument include="Aircraft/Instruments/trn-c172s.xml">
+            <name>Turn Coordinator</name>
+            <x alias="../../../params/col-1"/>
+            <y alias="../../../params/row-2"/>
+            <w alias="../../../params/size-1"/>
+            <h alias="../../../params/size-1"/>
+        </instrument>
+
+        <instrument include="Aircraft/SenecaII/Panels/hsi-bk-hi.xml">
+            <name>Bendix King HSI</name>
+            <x alias="../../../params/col-2"/>
+            <y alias="../../../params/row-2"/>
+            <w alias="../../../params/size-1"/>
+            <h alias="../../../params/size-1"/>
+        </instrument>
+
+        <instrument include="Aircraft/Instruments/vsi-c172s.xml">
+            <name>Vertical Velocity Indicator</name>
+            <x alias="../../../params/col-3"/>
+            <y alias="../../../params/row-2"/>
+            <w alias="../../../params/size-1"/>
+            <h alias="../../../params/size-1"/>
+        </instrument>
+
+         <instrument include="Aircraft/SenecaII/Panels/adf.xml">
+            <name>ADF</name>
+            <x alias="../../../params/col-2"/>
+            <y alias="../../../params/row-3"/>
+            <w alias="../../../params/size-1"/>
+            <h alias="../../../params/size-1"/>
+        </instrument>
+
+        <instrument include="Aircraft/SenecaII/Panels/FuelOilAmps.xml">
+            <name>FuelOilAmps</name>
+            <params>
+                <amps>/systems/electrical/bus[0]/element[1]/i</amps>
+                <cht>/engines/engine[0]/cht-degf</cht>
+                <ot>engines/engine[0]/oil-temperature-degf</ot>
+                <op>/engines/engine[0]/oil-pressure-psi</op>
+                <fuel>/consumables/fuel/tank[0]/level-gal_us</fuel>
+            </params>
+            <x>20</x>
+            <y>8</y>
+            <w>165</w>
+            <h>16</h>
+        </instrument>
+
+        <instrument include="Aircraft/SenecaII/Panels/FuelOilAmps.xml">
+            <name>FuelOilAmps</name>
+            <params>
+                <amps>/systems/electrical/bus[1]/element[1]/i</amps>
+                <cht>/engines/engine[1]/cht-degf</cht>
+                <ot>engines/engine[1]/oil-temperature-degf</ot>
+                <op>/engines/engine[1]/oil-pressure-psi</op>
+                <fuel>/consumables/fuel/tank[1]/level-gal_us</fuel>
+            </params>
+            <x>200</x>
+            <y>8</y>
+            <w>165</w>
+            <h>16</h>
+        </instrument>
+
+<!-- ENGINE -->
+        <instrument include="Aircraft/SenecaII/Panels/MP.xml">
+            <name>MP Gauge</name>
+            <params>
+                <left>/engines/engine[0]/mp-osi-filtered</left>
+                <right>/engines/engine[1]/mp-osi-filtered</right>
+            </params>
+            <x alias="../../../params/col-4"/>
+            <y alias="../../../params/row-1"/>
+            <w alias="../../../params/size-1"/>
+            <h alias="../../../params/size-1"/>
+        </instrument>
+
+        <instrument include="RPM-dual.xml">
+            <name>RPM Left Gauge</name>
+            <params>
+                <source1>/engines/engine[0]/rpm-filtered</source1>
+                <source2>/engines/engine[1]/rpm-filtered</source2>
+            </params>
+            <x alias="../../../params/col-4"/>
+            <y alias="../../../params/row-2"/>
+            <w alias="../../../params/size-1"/>
+            <h alias="../../../params/size-1"/>
+        </instrument>
+
+        <instrument include="Aircraft/SenecaII/Panels/FF.xml">
+            <name>Fuel Flow Gauge</name>
+            <params>
+                <left>/engines/engine[0]/fuel-flow-gph</left>
+                <right>/engines/engine[1]/fuel-flow-gph</right>
+            </params>
+            <x alias="../../../params/col-4"/>
+            <y alias="../../../params/row-3"/>
+            <w>95</w>
+            <h>95</h>
+<!--             <w alias="../../../params/size-1"/>
+            <h alias="../../../params/size-1"/> -->
+        </instrument>
+
+        <instrument include="Aircraft/SenecaII/Panels/FlapTrimIndicator.xml">
+            <name>FlapTrim</name>
+            <x alias="../../../params/col-3"/>
+            <y alias="../../../params/row-3"/>
+            <w alias="../../../params/size-1"/>
+            <h alias="../../../params/size-1"/>
+        </instrument>
+
+        <instrument include="Aircraft/Instruments/kra-10a.xml">
+            <name>Radar Altimeter</name>
+            <x alias="../../../params/col-1"/>
+            <y alias="../../../params/row-3"/>
+            <w alias="../../../params/size-1"/>
+            <h alias="../../../params/size-1"/>
+        </instrument>
+
+<!-- the rest are commented out for now until we get the rest of the small engine -->
+<!-- gauges done and can fit more stuff in the panel area.. -->
+<!--
+        <instrument include="Aircraft/SenecaII/Panels/EGT.xml">
+            <name>EGT-L Gauge</name>
+            <params>
+                <value>engines/engine[0]/egt-degf-filtered</value>
+                <bug>engines/engine[0]/egt-bug</bug>
+            </params>
+            <x alias="../../../params/eng-col-1"/>
+            <y alias="../../../params/eng-row-5"/>
+            <w alias="../../../params/size-2"/>
+            <h alias="../../../params/size-2"/>
+        </instrument>
+
+        <instrument include="Aircraft/SenecaII/Panels/EGT.xml">
+            <name>EGT-R Gauge</name>
+            <params>
+                <value>engines/engine[1]/egt-degf-filtered</value>
+                <bug>engines/engine[1]/egt-bug</bug>
+            </params>
+            <x alias="../../../params/eng-col-2"/>
+            <y alias="../../../params/eng-row-5"/>
+            <w alias="../../../params/size-2"/>
+            <h alias="../../../params/size-2"/>
+        </instrument>
+
+        <instrument include="Aircraft/SenecaII/Panels/Vacuum.xml">
+            <name>Gyro PressureGauge</name>
+
+            <x alias="../../../params/col-3"/>
+            <y alias="../../../params/row-3"/>
+            <w alias="../../../params/size-2"/>
+            <h alias="../../../params/size-2"/>
+        </instrument>
+
+         <instrument include="Aircraft/Instruments/dme.xml">
+            <name>dme</name>
+            <x alias="../../../params/col-2"/>
+            <y alias="../../../params/row-3"/>
+            <w>64</w>
+            <h>24</h>
+        </instrument>
+-->
+    </instruments>
+
+</PropertyList>

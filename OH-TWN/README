@@ -1,0 +1,20 @@
+*** OH-TWN simulator project files ***
+
+Mostly this is just a custom instrument panel intended to run a separate screen. 
+
+Usage:
+
+1. Put Panel1Protocol into your "Protocol" folder inside fgdata.
+
+2. run fgfs --generic=socket,out,24,localhost,34200,udp,Panel1Protocol &
+
+3. Symlink the "OH-TWN"-folder next to the other aircraft in fgfs.
+
+3. run fgpanel --panel=Aircraft/OH-TWN/Panels/Panel1.xml
+   --fg-root=/path/to/fgdata
+
+
+TODO:
+   - the protocol needs to be reviewed, likely some properties are
+     missing and also some are likely not used. Make sure we actually transmit the 
+     variables/values we use.

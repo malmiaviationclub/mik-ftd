@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+
+<!--
+RPM-dual.xml
+
+Dual needle RPM indicator for a SenecaII
+
+Derived from the single-needle version by Torsten Dreyer torsten@t3r.de
+Tuomas Kuosmanen tuomas.kuosmanen(at)gmail.com
+-->
+
+<PropertyList>
+
+    <name>RPM Indicator</name>
+    <w-base>512</w-base>
+    <h-base>512</h-base>
+    
+    <params>
+        <source1>/engines/engine[0]/rpm</source1>
+        <source2>/engines/engine[0]/rpm</source2>
+    </params>
+    
+    <layers>
+
+        <layer>
+            <name>Face</name>
+            <w>512</w>
+            <h>512</h>
+            <texture>
+                <path>Aircraft/SenecaII/Panels/Textures/RPM.rgb</path>
+                <x1>0.0</x1>
+                <x2>1.0</x2>
+                <y1>0.0</y1>
+                <y2>1.0</y2>
+            </texture>
+        </layer>
+
+        <layer>
+
+            <name>L/H Needle</name>
+            <w>54</w>
+            <h>310</h>
+
+            <texture>
+                <path>Aircraft/SenecaII/Panels/Textures/Misc.rgb</path>
+                <x1>0.1875</x1>
+                <x2>0.29296875</x2>
+                <y1>0.0625</y1>
+                <y2>0.892578125</y2>
+            </texture>
+
+            <transformations>
+                <transformation>
+                    <type>rotation</type>
+                    <property alias="../../../../../params/source1"/>
+                    <scale>1.0</scale>
+                    <interpolation>
+                        <entry>
+                            <ind>300</ind>
+                            <dep>-128</dep>
+                        </entry>
+                        <entry>
+                            <ind>1900</ind>
+                            <dep>0</dep>
+                        </entry>
+                        <entry>
+                            <ind>3500</ind>
+                            <dep>128</dep>
+                        </entry>
+                        
+                    </interpolation>
+                    <offset>0</offset>
+                </transformation>
+                <transformation>
+                    <type>y-shift</type>
+                    <offset>57</offset>
+                </transformation>
+            </transformations>
+        </layer>
+
+        <layer>
+            <name>R/H Needle</name>
+            <w>54</w>
+            <h>310</h>
+
+            <texture>
+                <path>Aircraft/SenecaII/Panels/Textures/Misc.rgb</path>
+                <x1>0.326171875</x1>
+                <x2>0.435546875</x2>
+                <y1>0.0625</y1>
+                <y2>0.892578125</y2>
+            </texture>
+
+            <transformations>
+                <transformation>
+                    <type>rotation</type>
+                    <property alias="../../../../../params/source2"/>
+                    <scale>1.0</scale>
+                    <interpolation>
+                        <entry>
+                            <ind>300</ind>
+                            <dep>-128</dep>
+                        </entry>
+                        <entry>
+                            <ind>1900</ind>
+                            <dep>0</dep>
+                        </entry>
+                        <entry>
+                            <ind>3500</ind>
+                            <dep>128</dep>
+                        </entry>
+                        
+                    </interpolation>
+                    <offset>0</offset>
+                </transformation>
+                <transformation>
+                    <type>y-shift</type>
+                    <offset>57</offset>
+                </transformation>
+            </transformations>
+        </layer>
+
+<!--
+        <layer>
+            <name>Ring</name>
+            <w>512</w>
+            <h>512</h>
+            <texture>
+                <path>Aircraft/SenecaII/Panels/Textures/Ring.rgb</path>
+                <x1>0.0</x1>
+                <x2>1.0</x2>
+                <y1>0.0</y1>
+                <y2>1.0</y2>
+            </texture>
+        </layer>
+-->
+    </layers>
+
+</PropertyList>
