@@ -1,25 +1,33 @@
-OH-TWN Flight Simulator 
-=======================
+OH-TWN Flight Simulator
+===========================================================================
+This is a Malmi Aviation Club (www.mik.fi) project to develop a flight
+training device based on FlightGear. You probably should first read
+http://wiki.flightgear.org/FGPanel and also the readme file inside
+flightgear/utils/fgpanel to get started with external panels if you
+want to use this for something.
+===========================================================================
 
-This project exists to develop a flight training device based on FlightGear 
-flight simulator. Requires FlightGear 2.4 or later to work, the required 
-fgpanel application is not necessarily part of the official windows build 
-of flightgear.
-
-This is based very heavily on the work of Torsten Dreyer in the SenecaII panel. 
+This is based on / inspired by the work of Torsten Dreyer in the
+SenecaII panel.
 
 PANEL - see Panel-folder.
 
-  This is a custom fullscreen instrument panel for the SenecaII aircraft in flightgear.
+  This is a custom fullscreen instrument panel for the SenecaII
+  aircraft in flightgear.
 
   Usage:
 
-  1. Put Panel1Protocol into your "Protocol" folder inside fgdata.
-  2. Symlink the "OH-TWN"-folder next to the other aircraft in fgfs.
-  3. run fgfs --generic=socket,out,24,localhost,34200,udp,Panel1Protocol
-  4. run fgpanel --panel=Aircraft/OH-TWN/Panels/Panel1.xml --fg-root=/path/to/fgdata
+  1. Put Panel1Protocol into your "Protocol" folder inside fgdata
+  2. Symlink the "OH-TWN"-folder next to the other aircraft in fgfs
+     aircraft folder.  
+  3. Run fgfs with protocol output parameters:
+     --generic=socket,out,24,[ip-addr],34200,udp,Panel1Protocol
+  4. Start fgpanel with --panel=Aircraft/OH-TWN/Panels/Panel1.xml
+  --fg-root=/path/to/fgdata
 
-TODO:
-   - the protocol needs to be revised, as it is just the one from SenecaII 
-     trainer panel. Likely some properties are missing and some are likely 
-     not used. Make sure we actually transmit the variables/values we use.
+  TODO:
+
+   - The protocol file needs to be checked, as it is just the one from
+     SenecaII trainer panel. Likely some properties are missing and
+     some are likely not used. Make sure we actually transmit the
+     variables/values we use.
