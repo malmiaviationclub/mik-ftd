@@ -1,6 +1,6 @@
 <PropertyList>
 
-  <game-mode type="bool">false</game-mode>
+  <game-mode type="bool">true</game-mode>
 
   <panel include="TWN-panel.xml"/>
 

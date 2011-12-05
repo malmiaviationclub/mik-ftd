@@ -19,26 +19,26 @@
 <PropertyList>
     <params>
       <!-- big cutouts are in a 3x3 grid -->
-      <row-1>214</row-1>
-      <row-2>134</row-2>
-      <row-3>54</row-3>
+      <row-1>672</row-1>
+      <row-2>416</row-2>
+      <row-3>160</row-3>
       <row-4>32</row-4>
 
-      <col-1>42</col-1>
-      <col-2>126</col-2>
-      <col-3>210</col-3>
-      <col-4>294</col-4>
+      <col-1>128</col-1>
+      <col-2>384</col-2>
+      <col-3>640</col-3>
+      <col-4>896</col-4>
 
       <!-- engine two columns -->
-      <eng-col-1>276</eng-col-1>
-      <eng-col-2>318</eng-col-2>
+      <eng-col-1>832</eng-col-1>
+      <eng-col-2>960</eng-col-2>
 
-      <eng-row-1>230</eng-row-1>
-      <eng-row-2>190</eng-row-2>
-      <eng-row-3>150</eng-row-3>
-      <eng-row-4>110</eng-row-4>
-      <eng-row-5>70</eng-row-5>
-      <eng-row-6>50</eng-row-6>
+      <eng-row-1>736</eng-row-1>
+      <eng-row-2>608</eng-row-2>
+      <eng-row-3>480</eng-row-3>
+      <eng-row-4>352</eng-row-4>
+      <eng-row-5>224</eng-row-5>
+      <eng-row-6>96</eng-row-6>
 
 
       <col-r1>385</col-r1>
@@ -48,18 +48,19 @@
 
       <radio-col>603</radio-col>
 
-      <size-1>80</size-1>
-      <size-2>38</size-2>
+      <size-1>256</size-1>
+      <size-2>128</size-2>
     </params>
 
     <name>SenecaII IFR Panel</name>
     <!-- OH-TWN has a 17" tft for instrument panel if I remember correctly... -->
-    <w>338</w>
-    <h>253</h>
+    <w>1280</w>
+<!--    <w>338</w> -->
+    <h>800</h>
 
     <instruments>
 
-        <instrument include="Aircraft/SenecaII/Panels/fps.xml">
+        <instrument include="Aircraft/Instruments/fps.xml">
             <name>frames per second</name>
             <x>20</x>
             <y>0</y>
@@ -117,14 +118,6 @@
             <h alias="../../../params/size-1"/>
         </instrument>
 
-         <instrument include="Aircraft/SenecaII/Panels/adf.xml">
-            <name>ADF</name>
-            <x alias="../../../params/col-2"/>
-            <y alias="../../../params/row-3"/>
-            <w alias="../../../params/size-1"/>
-            <h alias="../../../params/size-1"/>
-        </instrument>
-
         <instrument include="Aircraft/SenecaII/Panels/FuelOilAmps.xml">
             <name>FuelOilAmps</name>
             <params>
@@ -156,59 +149,59 @@
         </instrument>
 
 <!-- ENGINE -->
-        <instrument include="Aircraft/SenecaII/Panels/MP.xml">
-            <name>MP Gauge</name>
+
+        <instrument include="MP-newstyle.xml">
+            <name>MP engine 1</name>
             <params>
-                <left>/engines/engine[0]/mp-osi-filtered</left>
-                <right>/engines/engine[1]/mp-osi-filtered</right>
+                <manifold>/engines/engine[0]/mp-osi-filtered</manifold>
             </params>
-            <x alias="../../../params/col-4"/>
-            <y alias="../../../params/row-1"/>
-            <w alias="../../../params/size-1"/>
-            <h alias="../../../params/size-1"/>
+            <x alias="../../../params/eng-col-1"/>
+            <y alias="../../../params/eng-row-1"/>
+            <w alias="../../../params/size-2"/>
+            <h alias="../../../params/size-2"/>
         </instrument>
 
-        <instrument include="RPM-dual.xml">
-            <name>RPM Left Gauge</name>
+        <instrument include="MP-newstyle.xml">
+            <name>MP engine 2</name>
             <params>
-                <source1>/engines/engine[0]/rpm-filtered</source1>
-                <source2>/engines/engine[1]/rpm-filtered</source2>
+                <manifold>/engines/engine[1]/mp-osi-filtered</manifold>
             </params>
-            <x alias="../../../params/col-4"/>
-            <y alias="../../../params/row-2"/>
-            <w alias="../../../params/size-1"/>
-            <h alias="../../../params/size-1"/>
+            <x alias="../../../params/eng-col-2"/>
+            <y alias="../../../params/eng-row-1"/>
+            <w alias="../../../params/size-2"/>
+            <h alias="../../../params/size-2"/>
         </instrument>
 
-        <instrument include="Aircraft/SenecaII/Panels/FF.xml">
-            <name>Fuel Flow Gauge</name>
+        <instrument include="RPM-newstyle.xml">
+            <name>RPM engine 1</name>
             <params>
-                <left>/engines/engine[0]/fuel-flow-gph</left>
-                <right>/engines/engine[1]/fuel-flow-gph</right>
+                <source>/engines/engine[0]/rpm-filtered</source>
             </params>
-            <x alias="../../../params/col-4"/>
-            <y alias="../../../params/row-3"/>
-            <w>95</w>
-            <h>95</h>
-<!--             <w alias="../../../params/size-1"/>
-            <h alias="../../../params/size-1"/> -->
+            <x alias="../../../params/eng-col-1"/>
+            <y alias="../../../params/eng-row-2"/>
+            <w alias="../../../params/size-2"/>
+            <h alias="../../../params/size-2"/>
         </instrument>
 
-        <instrument include="Aircraft/SenecaII/Panels/FlapTrimIndicator.xml">
-            <name>FlapTrim</name>
-            <x alias="../../../params/col-3"/>
-            <y alias="../../../params/row-3"/>
-            <w alias="../../../params/size-1"/>
-            <h alias="../../../params/size-1"/>
+        <instrument include="RPM-newstyle.xml">
+            <name>RPM engine 2</name>
+            <params>
+                <source>/engines/engine[1]/rpm-filtered</source>
+            </params>
+            <x alias="../../../params/eng-col-2"/>
+            <y alias="../../../params/eng-row-2"/>
+            <w alias="../../../params/size-2"/>
+            <h alias="../../../params/size-2"/>
         </instrument>
 
-        <instrument include="Aircraft/Instruments/kra-10a.xml">
-            <name>Radar Altimeter</name>
+         <instrument include="Aircraft/SenecaII/Panels/adf.xml">
+            <name>ADF</name>
             <x alias="../../../params/col-1"/>
             <y alias="../../../params/row-3"/>
             <w alias="../../../params/size-1"/>
             <h alias="../../../params/size-1"/>
         </instrument>
+
 
 <!-- the rest are commented out for now until we get the rest of the small engine -->
 <!-- gauges done and can fit more stuff in the panel area.. -->
