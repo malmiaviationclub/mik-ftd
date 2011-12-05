@@ -15,8 +15,8 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.2 r9819"
-   sodipodi:docname="face-tit-senecaII.svg"
-   inkscape:export-filename="/home/tigert/git/gitorious.org/mik-ftd/OH-TWN/Panels/face-tit-senecaII.png"
+   sodipodi:docname="face-tit-senecaV.svg"
+   inkscape:export-filename="/home/tigert/git/gitorious.org/mik-ftd/OH-TWN/Panels/face-tit-senecaV.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <defs
@@ -373,7 +373,7 @@
          sodipodi:cy="-271.36316"
          sodipodi:rx="90.039467"
          sodipodi:ry="90.039467"
-         d="m 362.46895,-296.21603 a 90.039467,90.039467 0 1 1 -78.17558,-64.79709 l -8.36597,89.64996 z"
+         d="m 362.46895,-296.21603 c 13.72586,47.79558 -13.8931,97.66856 -61.68868,111.39442 -47.79558,13.72587 -97.66856,-13.8931 -111.39442,-61.68868 -13.72587,-47.79558 13.8931,-97.66856 61.68868,-111.39442 10.78261,-3.09654 22.04894,-4.15077 33.21884,-3.10841 l -8.36597,89.64996 z"
          transform="matrix(0.62000153,-0.51350378,0.51350354,0.62000153,95.725665,1234.3405)" />
       <text
          sodipodi:linespacing="125%"
@@ -419,13 +419,16 @@
       <text
          xml:space="preserve"
          style="font-size:56.23934937px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
-         x="10.821515"
-         y="910.3028"
+         x="9.3496561"
+         y="907.84979"
          id="text4138"
-         sodipodi:linespacing="125%"><tspan
+         sodipodi:linespacing="125%"
+         inkscape:export-filename="/home/tigert/git/gitorious.org/mik-ftd/OH-TWN/Panels/text4138.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90"><tspan
            sodipodi:role="line"
-           x="10.821515"
-           y="910.3028"
+           x="9.3496561"
+           y="907.84979"
            style="font-size:22.49573898px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#ffffff;font-family:Droid Sans;-inkscape-font-specification:Droid Sans Bold"
            id="tspan4140">17</tspan></text>
       <path
@@ -783,7 +786,7 @@
          sodipodi:cy="-271.36316"
          sodipodi:rx="90.039467"
          sodipodi:ry="90.039467"
-         d="M 295.66438,-183.51353 A 90.039467,90.039467 0 0 1 185.96962,-275.19779"
+         d="m 295.66438,-183.51353 c -48.51801,10.90043 -96.68617,-19.59464 -107.58661,-68.11265 -1.73673,-7.73023 -2.44557,-15.65588 -2.10815,-23.57161"
          transform="matrix(0.92184646,0,0,0.92184646,-126.36267,1174.5174)" />
       <text
          sodipodi:linespacing="125%"
