@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<!--
+
+RPM-newstyle.xml
+
+Based on the work of Torsten Dreyer torsten@t3r.de
+
+RPM gauge for SenecaII. This is a "new" style small gauge that
+exist in round-gauge paneled SenecaV aircraft where all engine gauges are in 
+a cluster in two columns on the right side of the "six pack".
+
+-->
+
+<PropertyList>
+
+    <name>RPM Indicator</name>
+    <w-base>256</w-base>
+    <h-base>256</h-base>
+    
+    <params>
+        <source>/engines/engine[0]/rpm</source>
+    </params>
+    
+    <layers>
+
+        <layer>
+            <name>Face</name>
+            <w>256</w>
+            <h>256</h>
+            <texture>
+                <path>face-rpm-senecaII.png</path>
+                <x1>0.0</x1>
+                <x2>1.0</x2>
+                <y1>0.0</y1>
+                <y2>1.0</y2>
+            </texture>
+        </layer>
+
+        <layer>
+            <name>Needle</name>
+            <w>32</w>
+            <h>50</h>
+
+            <texture>
+                <path>pointer.png</path>
+                <x1>0.0</x1>
+                <x2>1.0</x2>
+                <y1>0.0</y1>
+                <y2>1.0</y2>
+            </texture>
+
+            <transformations>
+                <transformation>
+                    <type>rotation</type>
+                    <property alias="../../../../../params/source"/>
+                    <scale>1.0</scale>
+                    <interpolation>
+                        <entry>
+                            <ind>0</ind>
+                            <dep>32</dep>
+                        </entry>
+                        <entry>
+                            <ind>400</ind>
+                            <dep>49</dep>
+                        </entry>
+                        <entry>
+                            <ind>1000</ind>
+                            <dep>107</dep>
+                        </entry>
+                        <entry>
+                            <ind>2700</ind>
+                            <dep>301</dep>
+                        </entry>
+                        
+                    </interpolation>
+                    <offset>0</offset>
+                </transformation>
+                <transformation>
+                    <type>y-shift</type>
+                    <offset>57</offset>
+                </transformation>
+            </transformations>
+        </layer>
+    </layers>
+
+</PropertyList>
+
