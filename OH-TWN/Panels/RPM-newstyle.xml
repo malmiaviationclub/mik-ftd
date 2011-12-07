@@ -9,6 +9,7 @@ RPM gauge for SenecaII. This is a "new" style small gauge that
 exist in round-gauge paneled SenecaV aircraft where all engine gauges are in 
 a cluster in two columns on the right side of the "six pack".
 
+Tuomas Kuosmanen tuomas.kuosmanen@gmail.com
 -->
 
 <PropertyList>
@@ -77,7 +78,7 @@ a cluster in two columns on the right side of the "six pack".
                 </transformation>
                 <transformation>
                     <type>y-shift</type>
-                    <offset>57</offset>
+                    <offset>50</offset>
                 </transformation>
             </transformations>
         </layer>
