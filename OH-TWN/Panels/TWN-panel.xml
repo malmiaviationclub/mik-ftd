@@ -197,7 +197,7 @@
         <instrument include="TIT-newstyle.xml">
             <name>TIT engine 1</name>
             <params>
-                <source>/engines/engine[0]/egt-degf</source>
+                <tit>/engines/engine[0]/egt-degf-filtered</tit>
             </params>
             <x alias="../../../params/eng-col-1"/>
             <y alias="../../../params/eng-row-3"/>
@@ -208,10 +208,34 @@
         <instrument include="TIT-newstyle.xml">
             <name>TIT engine 2</name>
             <params>
-                <source>/engines/engine[1]/egt-degf</source>
+                <tit>/engines/engine[1]/egt-degf-filtered</tit>
             </params>
             <x alias="../../../params/eng-col-2"/>
             <y alias="../../../params/eng-row-3"/>
+            <w alias="../../../params/size-2"/>
+            <h alias="../../../params/size-2"/>
+        </instrument>
+
+        <instrument include="FF_CHT-newstyle.xml">
+            <name>EGT/CHT engine 1</name>
+            <params>
+                <fuelflow>/engines/engine[0]/fuel-flow-gph</fuelflow>
+                <cht>/engines/engine[0]/cht-degf</cht>
+            </params>
+            <x alias="../../../params/eng-col-1"/>
+            <y alias="../../../params/eng-row-4"/>
+            <w alias="../../../params/size-2"/>
+            <h alias="../../../params/size-2"/>
+        </instrument>
+
+        <instrument include="FF_CHT-newstyle.xml">
+            <name>EGT/CHT engine 2</name>
+            <params>
+                <fuelflow>/engines/engine[1]/fuel-flow-gph</fuelflow>
+                <cht>/engines/engine[1]/cht-degf</cht>
+            </params>
+            <x alias="../../../params/eng-col-2"/>
+            <y alias="../../../params/eng-row-4"/>
             <w alias="../../../params/size-2"/>
             <h alias="../../../params/size-2"/>
         </instrument>

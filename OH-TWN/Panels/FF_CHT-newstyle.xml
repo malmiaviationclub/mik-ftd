@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+
+<!--
+FF_CHT-newstyle.xml
+
+Based on the work of Torsten Dreyer torsten@t3r.de
+
+Fuel flow and CHT gauge for SenecaII. This is a "new" style small gauge that
+exist in round-gauge paneled SenecaV aircraft where all engine gauges are in 
+a cluster in two columns on the right side of the "six pack".
+
+Tuomas Kuosmanen tuomas.kuosmanen@gmail.com
+
+-->
+
+<PropertyList>
+
+    <name>FF/CHT Indicator</name>
+    <w-base>256</w-base>
+    <h-base>256</h-base>
+
+    <params>
+        <fuelflow>engines/engine[0]/fuel-flow-gph</fuelflow>
+        <cht>engines/engine[0]/cgt-degf</cht>
+    </params>
+    
+    <layers>
+
+        <layer>
+            <name>Face</name>
+            <w>256</w>
+            <h>256</h>
+            <texture>
+                <path>/Aircraft/OH-TWN/Panels/face-egt_cht-senecaV.png</path>
+                <x1>0.0</x1>
+                <x2>1.0</x2>
+                <y1>0.0</y1>
+                <y2>1.0</y2>
+            </texture>
+        </layer>
+
+        <layer>
+            <name>FF Needle</name>
+            <w>32</w>
+            <h>50</h>
+
+            <texture>
+                <path>/Aircraft/OH-TWN/Panels/pointer.png</path>
+                <x1>0.0</x1>
+                <x2>1.0</x2>
+                <y1>0.0</y1>
+                <y2>1.0</y2>
+            </texture>
+
+            <transformations>
+
+                <transformation>
+                    <type>rotation</type>
+                    <property alias="../../../../../params/fuelflow"/>
+                    <interpolation>
+                        <entry>
+                            <ind>0</ind>
+                            <dep>-148</dep>
+                        </entry>
+                        <entry>
+                            <ind>30</ind>
+                            <dep>-34</dep>
+                        </entry>
+                    </interpolation>
+                </transformation>
+
+                <transformation>
+                    <type>y-shift</type>
+                    <offset>50</offset>
+                </transformation>
+
+            </transformations>
+
+        </layer>
+
+        <layer>
+            <name>CHT Needle</name>
+            <w>32</w>
+            <h>50</h>
+
+            <texture>
+                <path>/Aircraft/OH-TWN/Panels/pointer.png</path>
+                <x1>0.0</x1>
+                <x2>1.0</x2>
+                <y1>0.0</y1>
+                <y2>1.0</y2>
+            </texture>
+
+            <transformations>
+
+                <transformation>
+                    <type>rotation</type>
+                    <property alias="../../../../../params/cht"/>
+                    <interpolation>
+                        <entry>
+                            <ind>0</ind>
+                            <dep>148</dep>
+                        </entry>
+                        <entry>
+                            <ind>500</ind>
+                            <dep>34</dep>
+                        </entry>
+                    </interpolation>
+                </transformation>
+
+                <transformation>
+                    <type>y-shift</type>
+                    <offset>50</offset>
+                </transformation>
+
+            </transformations>
+
+        </layer>
+
+    </layers>
+
+</PropertyList>
