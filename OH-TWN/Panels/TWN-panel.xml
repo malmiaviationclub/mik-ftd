@@ -194,6 +194,28 @@
             <h alias="../../../params/size-2"/>
         </instrument>
 
+        <instrument include="TIT-newstyle.xml">
+            <name>TIT engine 1</name>
+            <params>
+                <source>/engines/engine[0]/egt-degf</source>
+            </params>
+            <x alias="../../../params/eng-col-1"/>
+            <y alias="../../../params/eng-row-3"/>
+            <w alias="../../../params/size-2"/>
+            <h alias="../../../params/size-2"/>
+        </instrument>
+
+        <instrument include="TIT-newstyle.xml">
+            <name>TIT engine 2</name>
+            <params>
+                <source>/engines/engine[1]/egt-degf</source>
+            </params>
+            <x alias="../../../params/eng-col-2"/>
+            <y alias="../../../params/eng-row-3"/>
+            <w alias="../../../params/size-2"/>
+            <h alias="../../../params/size-2"/>
+        </instrument>
+
          <instrument include="Aircraft/SenecaII/Panels/adf.xml">
             <name>ADF</name>
             <x alias="../../../params/col-1"/>
