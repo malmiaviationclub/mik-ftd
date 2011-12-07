@@ -29,7 +29,7 @@ Tuomas Kuosmanen tuomas.kuosmanen@gmail.com
             <w>256</w>
             <h>256</h>
             <texture>
-                <path>face-rpm-senecaII.png</path>
+                <path>/Aircraft/OH-TWN/Panels/face-rpm-senecaII.png</path>
                 <x1>0.0</x1>
                 <x2>1.0</x2>
                 <y1>0.0</y1>
@@ -43,7 +43,7 @@ Tuomas Kuosmanen tuomas.kuosmanen@gmail.com
             <h>50</h>
 
             <texture>
-                <path>pointer.png</path>
+                <path>/Aircraft/OH-TWN/Panels/pointer.png</path>
                 <x1>0.0</x1>
                 <x2>1.0</x2>
                 <y1>0.0</y1>
