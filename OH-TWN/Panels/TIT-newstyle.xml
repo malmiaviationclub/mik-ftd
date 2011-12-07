@@ -25,7 +25,7 @@ Tuomas Kuosmanen tuomas.kuosmanen@gmail.com
     <h-base>256</h-base>
 
     <params>
-        <value>engines/engine[0]/egt-degf</value>
+        <tit>engines/engine[0]/egt-degf-filtered</tit>
     </params>
     
     <layers>
@@ -49,7 +49,7 @@ Tuomas Kuosmanen tuomas.kuosmanen@gmail.com
             <h>50</h>
 
             <texture>
-                <path>pointer.png</path>
+                <path>/Aircraft/OH-TWN/Panels/pointer.png</path>
                 <x1>0.0</x1>
                 <x2>1.0</x2>
                 <y1>0.0</y1>
@@ -60,7 +60,7 @@ Tuomas Kuosmanen tuomas.kuosmanen@gmail.com
 
                 <transformation>
                     <type>rotation</type>
-                    <property alias="../../../../../params/value"/>
+                    <property alias="../../../../../params/tit"/>
                     <interpolation>
                         <entry>
                             <ind>0</ind>
