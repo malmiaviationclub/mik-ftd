@@ -240,6 +240,30 @@
             <h alias="../../../params/size-2"/>
         </instrument>
 
+        <instrument include="OT_OP-newstyle.xml">
+            <name>OT/OP engine 1</name>
+            <params>
+               <ot>engines/engine[0]/oil-temperature-degf</ot>
+               <op>/engines/engine[0]/oil-pressure-psi</op>
+            </params>
+            <x alias="../../../params/eng-col-1"/>
+            <y alias="../../../params/eng-row-5"/>
+            <w alias="../../../params/size-2"/>
+            <h alias="../../../params/size-2"/>
+        </instrument>
+
+        <instrument include="OT_OP-newstyle.xml">
+            <name>OT/OP engine 2</name>
+            <params>
+               <ot>engines/engine[1]/oil-temperature-degf</ot>
+               <op>/engines/engine[1]/oil-pressure-psi</op>
+            </params>
+            <x alias="../../../params/eng-col-2"/>
+            <y alias="../../../params/eng-row-5"/>
+            <w alias="../../../params/size-2"/>
+            <h alias="../../../params/size-2"/>
+        </instrument>
+
          <instrument include="Aircraft/SenecaII/Panels/adf.xml">
             <name>ADF</name>
             <x alias="../../../params/col-1"/>
