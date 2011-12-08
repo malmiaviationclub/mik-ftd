@@ -264,6 +264,17 @@
             <h alias="../../../params/size-2"/>
         </instrument>
 
+        <instrument include="VAC-newstyle.xml">
+            <name>Vacuum</name>
+            <params>
+               <vac>/instrumentation/vacuum/suction-inhg</vac>
+            </params>
+            <x alias="../../../params/eng-col-1"/>
+            <y alias="../../../params/eng-row-6"/>
+            <w alias="../../../params/size-2"/>
+            <h alias="../../../params/size-2"/>
+        </instrument>
+
          <instrument include="Aircraft/SenecaII/Panels/adf.xml">
             <name>ADF</name>
             <x alias="../../../params/col-1"/>
