@@ -194,10 +194,10 @@
             <h alias="../../../params/size-2"/>
         </instrument>
 
-        <instrument include="TIT-newstyle.xml">
-            <name>TIT engine 1</name>
+        <instrument include="EGT-newstyle.xml">
+            <name>EGT engine 1</name>
             <params>
-                <tit>/engines/engine[0]/egt-degf-filtered</tit>
+                <egt>/engines/engine[0]/egt-degf-filtered</egt>
             </params>
             <x alias="../../../params/eng-col-1"/>
             <y alias="../../../params/eng-row-3"/>
@@ -205,10 +205,10 @@
             <h alias="../../../params/size-2"/>
         </instrument>
 
-        <instrument include="TIT-newstyle.xml">
-            <name>TIT engine 2</name>
+        <instrument include="EGT-newstyle.xml">
+            <name>EGT engine 2</name>
             <params>
-                <tit>/engines/engine[1]/egt-degf-filtered</tit>
+                <egt>/engines/engine[1]/egt-degf-filtered</egt>
             </params>
             <x alias="../../../params/eng-col-2"/>
             <y alias="../../../params/eng-row-3"/>
@@ -270,6 +270,18 @@
                <vac>/instrumentation/vacuum/suction-inhg</vac>
             </params>
             <x alias="../../../params/eng-col-1"/>
+            <y alias="../../../params/eng-row-6"/>
+            <w alias="../../../params/size-2"/>
+            <h alias="../../../params/size-2"/>
+        </instrument>
+
+        <instrument include="FUEL_QTY-newstyle.xml">
+            <name>Vacuum</name>
+            <params>
+       <fuel-left-level>/consumables/fuel/tank[0]/level-gal_us</fuel-left-level>
+       <fuel-right-level>/consumables/fuel/tank[1]/level-gal_us</fuel-right-level>
+            </params>
+            <x alias="../../../params/eng-col-2"/>
             <y alias="../../../params/eng-row-6"/>
             <w alias="../../../params/size-2"/>
             <h alias="../../../params/size-2"/>
