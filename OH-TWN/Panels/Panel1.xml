@@ -1,6 +1,6 @@
 <PropertyList>
 
-  <game-mode type="bool">true</game-mode>
+  <game-mode type="bool">false</game-mode>
 
   <panel include="TWN-panel.xml"/>
 
@@ -17,7 +17,7 @@
 
   <communication>
     <listen>
-      <host>localhost</host>
+      <host>0.0.0.0</host>
       <port>34200</port>
       <style>udp</style>
     </listen>
