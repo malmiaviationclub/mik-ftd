@@ -58,51 +58,6 @@
          id="stop4360" />
     </linearGradient>
     <filter
-       id="filter4574"
-       inkscape:label="Drop shadow"
-       width="1.5"
-       height="1.5"
-       x="-0.25"
-       y="-0.25"
-       color-interpolation-filters="sRGB">
-      <feGaussianBlur
-         id="feGaussianBlur4576"
-         in="SourceAlpha"
-         stdDeviation="22"
-         result="blur" />
-      <feColorMatrix
-         id="feColorMatrix4578"
-         result="bluralpha"
-         type="matrix"
-         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 " />
-      <feOffset
-         id="feOffset4580"
-         in="bluralpha"
-         dx="6"
-         dy="10"
-         result="offsetBlur" />
-      <feMerge
-         id="feMerge4582">
-        <feMergeNode
-           id="feMergeNode4584"
-           in="offsetBlur" />
-        <feMergeNode
-           id="feMergeNode4586"
-           in="SourceGraphic" />
-      </feMerge>
-    </filter>
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4372"
-       id="radialGradient4645"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1,0,0,0.99993084,0,-0.01876641)"
-       cx="275.9274"
-       cy="-271.35693"
-       fx="275.9274"
-       fy="-271.35693"
-       r="90.052017" />
-    <filter
        inkscape:collect="always"
        id="filter4662"
        x="-0.12"
@@ -115,16 +70,6 @@
          stdDeviation="9.0039467"
          id="feGaussianBlur4664" />
     </filter>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4362"
-       id="linearGradient4742"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.98901575,0,0,0.98901575,161.27339,-366.93857)"
-       x1="113.08239"
-       y1="30.491014"
-       x2="136.55351"
-       y2="189.81007" />
     <filter
        inkscape:collect="always"
        id="filter4754"
@@ -134,15 +79,6 @@
          stdDeviation="3.6015787"
          id="feGaussianBlur4756" />
     </filter>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4356"
-       id="linearGradient4760"
-       gradientUnits="userSpaceOnUse"
-       x1="253.06206"
-       y1="-326.8931"
-       x2="297.15927"
-       y2="-170.10292" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4362"
@@ -174,40 +110,6 @@
        x2="297.15927"
        y2="-170.10292" />
     <filter
-       id="filter4942"
-       inkscape:label="Drop shadow"
-       width="1.5"
-       height="1.5"
-       x="-0.25"
-       y="-0.25"
-       color-interpolation-filters="sRGB">
-      <feGaussianBlur
-         id="feGaussianBlur4944"
-         in="SourceAlpha"
-         stdDeviation="2"
-         result="blur" />
-      <feColorMatrix
-         id="feColorMatrix4946"
-         result="bluralpha"
-         type="matrix"
-         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 " />
-      <feOffset
-         id="feOffset4948"
-         in="bluralpha"
-         dx="0"
-         dy="0"
-         result="offsetBlur" />
-      <feMerge
-         id="feMerge4950">
-        <feMergeNode
-           id="feMergeNode4952"
-           in="offsetBlur" />
-        <feMergeNode
-           id="feMergeNode4954"
-           in="SourceGraphic" />
-      </feMerge>
-    </filter>
-    <filter
        inkscape:collect="always"
        id="filter3871">
       <feGaussianBlur
@@ -215,32 +117,6 @@
          stdDeviation="0.90039467"
          id="feGaussianBlur3873" />
     </filter>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath3214">
-      <rect
-         style="fill:none;stroke:none"
-         id="rect3216"
-         width="208.13008"
-         height="194.08136"
-         x="-29.658546"
-         y="836.94757"
-         rx="0.89418501"
-         ry="0.59110141" />
-    </clipPath>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath3257">
-      <rect
-         ry="0.59110141"
-         rx="0.89418501"
-         y="836.94757"
-         x="-29.658548"
-         height="194.08136"
-         width="208.13008"
-         id="rect3259"
-         style="fill:#ffffff;stroke:none" />
-    </clipPath>
   </defs>
   <sodipodi:namedview
      id="base"
