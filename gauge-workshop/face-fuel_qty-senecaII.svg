@@ -299,7 +299,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -456,22 +456,27 @@
          xml:space="preserve"
          style="font-size:56.23934937px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
          x="128.22311"
-         y="1003.5861"
+         y="995.26093"
          id="text3911"
          sodipodi:linespacing="125%"><tspan
            sodipodi:role="line"
            id="tspan3913"
            x="128.22311"
-           y="1003.5861"
+           y="995.26093"
            style="font-size:22.49573898px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;text-anchor:middle;fill:#ffffff;font-family:Droid Sans;-inkscape-font-specification:Droid Sans Bold">QTY</tspan><tspan
            sodipodi:role="line"
            x="128.22311"
-           y="1023.2973"
+           y="1014.9721"
            style="font-size:14.05983734px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;text-anchor:middle;fill:#ffffff;font-family:Droid Sans;-inkscape-font-specification:Droid Sans Bold"
-           id="tspan3915">123 US GAL</tspan><tspan
+           id="tspan3915">61 US GAL</tspan><tspan
            sodipodi:role="line"
            x="128.22311"
-           y="1040.8721"
+           y="1027.8682"
+           style="font-size:9.36585522px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;text-anchor:middle;fill:#ffffff;font-family:Droid Sans;-inkscape-font-specification:Droid Sans Bold"
+           id="tspan3110">PER TANK</tspan><tspan
+           sodipodi:role="line"
+           x="128.22311"
+           y="1044.2543"
            style="font-size:14.05983734px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;text-anchor:middle;fill:#ffffff;font-family:Droid Sans;-inkscape-font-specification:Droid Sans Bold"
            id="tspan3626">USABLE</tspan></text>
       <text
@@ -501,7 +506,7 @@
              x="62.006287"
              y="1021.5022"
              style="font-size:22.49573898px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#ffffff;font-family:Droid Sans;-inkscape-font-specification:Droid Sans Bold"
-             id="tspan4136">0</tspan></text>
+             id="tspan4136">E</tspan></text>
         <text
            sodipodi:linespacing="125%"
            id="text3959"
@@ -742,7 +747,7 @@
            x="181.60347"
            y="1021.5022"
            style="font-size:22.49573898px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#ffffff;font-family:Droid Sans;-inkscape-font-specification:Droid Sans Bold"
-           id="tspan3661">0</tspan></text>
+           id="tspan3661">E</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text3663"
