@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<!--
+vac-seneca-small.xml
+
+Based on the work of Torsten Dreyer torsten@t3r.de
+
+Vacuum gauge for SenecaII. Newer style small round gauge. Redline etc is
+valid for Seneca II.
+
+Tuomas Kuosmanen tuomas.kuosmanen@gmail.com
+-->
+
+<PropertyList>
+
+    <name>OT/OP Indicator</name>
+    <w-base>256</w-base>
+    <h-base>256</h-base>
+
+    <params>
+      <ot>engines/engine[0]/oil-temperature-degf</ot>
+      <op>/engines/engine[0]/oil-pressure-psi</op>
+    </params>
+    
+    <layers>
+
+        <layer>
+            <name>Face</name>
+            <w>256</w>
+            <h>256</h>
+            <texture>
+                <path>Aircraft/OH-TWN/Instruments/Textures/face-vac-seneca-small.png</path>
+                <x1>0.0</x1>
+                <x2>1.0</x2>
+                <y1>0.0</y1>
+                <y2>1.0</y2>
+            </texture>
+        </layer>
+
+        <layer>
+            <name>VAC Needle</name>
+            <w>32</w>
+            <h>50</h>
+
+            <texture>
+                <path>Aircraft/OH-TWN/Instruments/Textures/pointer-seneca-small.png</path>
+                <x1>0.0</x1>
+                <x2>1.0</x2>
+                <y1>0.0</y1>
+                <y2>1.0</y2>
+            </texture>
+
+            <transformations>
+
+                <transformation>
+                    <type>rotation</type>
+                    <property alias="../../../../../params/vac"/>
+                    <interpolation>
+                        <entry>
+                            <ind>0</ind>
+                            <dep>61</dep>
+                        </entry>
+                        <entry>
+                            <ind>1.0</ind>
+                            <dep>70</dep>
+                        </entry>
+                        <entry>
+                            <ind>4.0</ind>
+                            <dep>159.5</dep>
+                        </entry>
+                        <entry>
+                            <ind>6.0</ind>
+                            <dep>338</dep>
+                        </entry>
+                    </interpolation>
+                </transformation>
+
+                <transformation>
+                    <type>y-shift</type>
+                    <offset>50</offset>
+                </transformation>
+
+            </transformations>
+
+        </layer>
+
+    </layers>
+
+</PropertyList>

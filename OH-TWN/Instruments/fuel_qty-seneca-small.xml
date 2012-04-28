@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<!--
+fuel_qty-seneca-small.xml
+
+Based on the work of Torsten Dreyer torsten@t3r.de
+
+Fuel quantity gauge for SenecaII. Newer style small round gauge. Values should be valid for SenecaII.
+
+Tuomas Kuosmanen tuomas.kuosmanen@gmail.com
+-->
+
+<PropertyList>
+
+    <name>Fuel Quantity Indicator</name>
+    <w-base>256</w-base>
+    <h-base>256</h-base>
+
+    <params>
+       <fuel-left-level>/consumables/fuel/tank[0]/level-gal_us</fuel-left-level>
+       <fuel-right-level>/consumables/fuel/tank[1]/level-gal_us</fuel-right-level>
+    </params>
+    
+    <layers>
+
+        <layer>
+            <name>Face</name>
+            <w>256</w>
+            <h>256</h>
+            <texture>
+                <path>Aircraft/OH-TWN/Instruments/Textures/face-fuel_qty-seneca-small.png</path>
+                <x1>0.0</x1>
+                <x2>1.0</x2>
+                <y1>0.0</y1>
+                <y2>1.0</y2>
+            </texture>
+        </layer>
+
+        <layer>
+            <name>Left Needle</name>
+            <w>32</w>
+            <h>50</h>
+            <texture>
+                <path>Aircraft/OH-TWN/Instruments/Textures/pointer-seneca-small.png</path>
+                <x1>0.0</x1>
+                <x2>1.0</x2>
+                <y1>0.0</y1>
+                <y2>1.0</y2>
+            </texture>
+            <transformations>
+                <transformation>
+                    <type>rotation</type>
+                    <property alias="../../../../../params/fuel-left-level"/>
+                    <min>0.0</min>
+                    <max>64.0</max>
+                    <scale>1.0</scale>
+                    <interpolation>
+                        <entry>
+                            <ind>0</ind>
+                            <dep>-148</dep>
+                        </entry>
+                        <entry>
+                            <ind>64</ind>
+                            <dep>-34</dep>
+                        </entry>
+                    </interpolation>
+                </transformation>
+                <transformation>
+                    <type>y-shift</type>
+                    <offset>50</offset>
+                </transformation>
+            </transformations>
+        </layer>
+
+        <layer>
+            <name>Right Needle</name>
+            <w>32</w>
+            <h>50</h>
+            <texture>
+                <path>/Aircraft/OH-TWN/Panels/pointer.png</path>
+                <x1>0.0</x1>
+                <x2>1.0</x2>
+                <y1>0.0</y1>
+                <y2>1.0</y2>
+            </texture>
+            <transformations>
+                <transformation>
+                    <type>rotation</type>
+                    <property alias="../../../../../params/fuel-right-level"/>
+                    <min>0.0</min>
+                    <max>64.0</max>
+                    <scale>1.0</scale>
+                    <interpolation>
+                        <entry>
+                            <ind>0</ind>
+                            <dep>148</dep>
+                        </entry>
+                        <entry>
+                            <ind>64</ind>
+                            <dep>34</dep>
+                        </entry>
+                    </interpolation>
+                </transformation>
+                <transformation>
+                    <type>y-shift</type>
+                    <offset>50</offset>
+                </transformation>
+            </transformations>
+        </layer>
+
+    </layers>
+
+</PropertyList>
