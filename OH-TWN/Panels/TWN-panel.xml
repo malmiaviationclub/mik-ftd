@@ -150,7 +150,7 @@
 
 <!-- ENGINE -->
 
-        <instrument include="MP-newstyle.xml">
+        <instrument include="Aircraft/OH-TWN/Instruments/mp-seneca-small.xml">
             <name>MP engine 1</name>
             <params>
                 <manifold>/engines/engine[0]/mp-osi-filtered</manifold>
@@ -161,7 +161,7 @@
             <h alias="../../../params/size-2"/>
         </instrument>
 
-        <instrument include="MP-newstyle.xml">
+        <instrument include="Aircraft/OH-TWN/Instruments/mp-seneca-small.xml">
             <name>MP engine 2</name>
             <params>
                 <manifold>/engines/engine[1]/mp-osi-filtered</manifold>
@@ -172,7 +172,7 @@
             <h alias="../../../params/size-2"/>
         </instrument>
 
-        <instrument include="RPM-newstyle.xml">
+        <instrument include="Aircraft/OH-TWN/Instruments/rpm-seneca-small.xml">
             <name>RPM engine 1</name>
             <params>
                 <source>/engines/engine[0]/rpm-filtered</source>
@@ -183,7 +183,7 @@
             <h alias="../../../params/size-2"/>
         </instrument>
 
-        <instrument include="RPM-newstyle.xml">
+        <instrument include="Aircraft/OH-TWN/Instruments/rpm-seneca-small.xml">
             <name>RPM engine 2</name>
             <params>
                 <source>/engines/engine[1]/rpm-filtered</source>
@@ -194,7 +194,7 @@
             <h alias="../../../params/size-2"/>
         </instrument>
 
-        <instrument include="EGT-newstyle.xml">
+        <instrument include="/Aircraft/OH-TWN/Instruments/egt-seneca-small.xml">
             <name>EGT engine 1</name>
             <params>
                 <egt>/engines/engine[0]/egt-degf-filtered</egt>
@@ -205,7 +205,7 @@
             <h alias="../../../params/size-2"/>
         </instrument>
 
-        <instrument include="EGT-newstyle.xml">
+        <instrument include="/Aircraft/OH-TWN/Instruments/egt-seneca-small.xml">
             <name>EGT engine 2</name>
             <params>
                 <egt>/engines/engine[1]/egt-degf-filtered</egt>
@@ -216,7 +216,7 @@
             <h alias="../../../params/size-2"/>
         </instrument>
 
-        <instrument include="FF_CHT-newstyle.xml">
+        <instrument include="/Aircraft/OH-TWN/Instruments/ff_cht-seneca-small.xml">
             <name>EGT/CHT engine 1</name>
             <params>
                 <fuelflow>/engines/engine[0]/fuel-flow-gph</fuelflow>
@@ -228,7 +228,7 @@
             <h alias="../../../params/size-2"/>
         </instrument>
 
-        <instrument include="FF_CHT-newstyle.xml">
+        <instrument include="/Aircraft/OH-TWN/Instruments/ff_cht-seneca-small.xml">
             <name>EGT/CHT engine 2</name>
             <params>
                 <fuelflow>/engines/engine[1]/fuel-flow-gph</fuelflow>
@@ -240,7 +240,7 @@
             <h alias="../../../params/size-2"/>
         </instrument>
 
-        <instrument include="OT_OP-newstyle.xml">
+        <instrument include="/Aircraft/OH-TWN/Instruments/ot_op-seneca-small.xml">
             <name>OT/OP engine 1</name>
             <params>
                <ot>engines/engine[0]/oil-temperature-degf</ot>
@@ -252,7 +252,7 @@
             <h alias="../../../params/size-2"/>
         </instrument>
 
-        <instrument include="OT_OP-newstyle.xml">
+        <instrument include="/Aircraft/OH-TWN/Instruments/ot_op-seneca-small.xml">
             <name>OT/OP engine 2</name>
             <params>
                <ot>engines/engine[1]/oil-temperature-degf</ot>
@@ -264,7 +264,7 @@
             <h alias="../../../params/size-2"/>
         </instrument>
 
-        <instrument include="VAC-newstyle.xml">
+        <instrument include="/Aircraft/OH-TWN/Instruments/vac-seneca-small.xml">
             <name>Vacuum</name>
             <params>
                <vac>/instrumentation/vacuum/suction-inhg</vac>
@@ -275,7 +275,7 @@
             <h alias="../../../params/size-2"/>
         </instrument>
 
-        <instrument include="FUEL_QTY-newstyle.xml">
+        <instrument include="/Aircraft/OH-TWN/Instruments/fuel_qty-seneca-small.xml">
             <name>Vacuum</name>
             <params>
        <fuel-left-level>/consumables/fuel/tank[0]/level-gal_us</fuel-left-level>
