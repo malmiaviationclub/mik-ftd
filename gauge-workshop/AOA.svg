@@ -16,7 +16,7 @@
    version="1.1"
    inkscape:version="0.91 r13551 custom"
    sodipodi:docname="AOA.svg"
-   inkscape:export-filename="/home/tigert/git/gitorious.org/mik-ftd/OH-TWN/Panels/face-vac-senecaII.png"
+   inkscape:export-filename="/home/tigert/git/fg/mik-ftd/gauge-workshop/AOA.png"
    inkscape:export-xdpi="89.999977"
    inkscape:export-ydpi="89.999977">
   <defs
@@ -103,8 +103,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="74.580923"
-     inkscape:cy="75.154601"
+     inkscape:cx="-173.41908"
+     inkscape:cy="73.154601"
      inkscape:document-units="px"
      inkscape:current-layer="layer3"
      showgrid="false"
@@ -179,7 +179,8 @@
        id="path5019"
        style="fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter3871)"
        inkscape:export-xdpi="89.999977"
-       inkscape:export-ydpi="89.999977" />
+       inkscape:export-ydpi="89.999977"
+       d="m 365.96687,-271.36316 a 90.039467,90.039467 0 0 1 -90.03947,90.03947 90.039467,90.039467 0 0 1 -90.03947,-90.03947 90.039467,90.039467 0 0 1 90.03947,-90.03947 90.039467,90.039467 0 0 1 90.03947,90.03947 z" />
     <ellipse
        cy="-867.63776"
        cx="128.00002"
@@ -188,14 +189,16 @@
        style="fill:#000000;fill-opacity:1;stroke:none"
        id="path3856"
        rx="123"
-       ry="122.99997" />
+       ry="122.99997"
+       d="m 251.00002,-867.63776 a 123,122.99997 0 0 1 -123,122.99997 A 123,122.99997 0 0 1 5.0000153,-867.63776 123,122.99997 0 0 1 128.00002,-990.63773 a 123,122.99997 0 0 1 123,122.99997 z" />
     <circle
        r="90.039467"
        cy="-271.36316"
        cx="275.9274"
        transform="matrix(1.246412,0,0,1.2464117,-215.91923,-529.4076)"
        id="path4728"
-       style="fill:url(#linearGradient4838);fill-opacity:1;stroke:none;filter:url(#filter4754)" />
+       style="fill:url(#linearGradient4838);fill-opacity:1;stroke:none;filter:url(#filter4754)"
+       d="m 365.96687,-271.36316 a 90.039467,90.039467 0 0 1 -90.03947,90.03947 90.039467,90.039467 0 0 1 -90.03947,-90.03947 90.039467,90.039467 0 0 1 90.03947,-90.03947 90.039467,90.039467 0 0 1 90.03947,90.03947 z" />
     <path
        sodipodi:nodetypes="ccccccc"
        inkscape:connector-curvature="0"
