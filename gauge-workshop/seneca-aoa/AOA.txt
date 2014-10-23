@@ -1,0 +1,20 @@
+Angle of Attack proof of concept gauge for the web panel.
+
+Tuomas Kuosmanen <tuomas.kuosmanen@gmail> & Malmi Aviation Club, October 2014.
+
+This is rough and hardcoded to the seneca.
+
+  * It assumes the critical angle of attack to be 15 degrees (scale = 4)
+    so it works on the SenecaII. This could be likely done generic, or 
+    in any case needs to be adapted to the aircraft in question. The 
+    "red line" is 60 degrees, so adjust your scaling accordingly.
+    so your critical AOA matches the redline (15*4 = 60).
+
+  * The negative alpha scale is not calibrated at all, I guess
+    the obvious thing to do is to make the gauge face match the 
+    negative critical alpha of the aircraft, or then again, it could
+    be just gray, as in "this is not really meant for inverted flight
+    guidance".. :-)
+
+  * A web gauge was easiest as proof of concept, this could also be
+    done as a real xml gauge for the virtual cockpit and fgpanel.

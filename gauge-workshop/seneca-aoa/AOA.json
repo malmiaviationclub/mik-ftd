@@ -1,0 +1,19 @@
+
+{ 
+    "src":    "AOA.svg",
+    "animations": [
+      {
+        "element": "#Needle",
+        "type":    "transform",
+        "transforms": [{
+          "type": "rotate",
+          "a": {
+            "property": "aoa",
+	    "scale": 4
+          },
+          "x": 340,
+          "y": 240
+        }]
+      }
+    ]
+}

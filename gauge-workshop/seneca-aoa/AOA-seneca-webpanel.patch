@@ -1,0 +1,24 @@
+diff --git a/Aircraft/SenecaII/WebPanel/Panel1-properties.json b/Aircraft/SenecaII/WebPanel/Panel1-properties.json
+index c0582cf..6084e78 100644
+--- a/Aircraft/SenecaII/WebPanel/Panel1-properties.json
++++ b/Aircraft/SenecaII/WebPanel/Panel1-properties.json
+@@ -4,6 +4,7 @@
+   "updateInterval": 50,
+ 
+   "propertyMirror": [
++    [ "aoa",       "/orientation/alpha-deg" ],
+     [ "ias",       "/instrumentation/airspeed-indicator/indicated-speed-kt" ],
+     [ "tas",       "/instrumentation/airspeed-indicator/tas-face-rotation" ],
+     [ "roll",      "/instrumentation/attitude-indicator/indicated-roll-deg" ],
+diff --git a/Aircraft/SenecaII/WebPanel/Panel1.html b/Aircraft/SenecaII/WebPanel/Panel1.html
+index 27500a6..97ec7a9 100644
+--- a/Aircraft/SenecaII/WebPanel/Panel1.html
++++ b/Aircraft/SenecaII/WebPanel/Panel1.html
+@@ -111,6 +111,6 @@ body,html {
+   <div id="Position4" class="big instrument" data-fgpanel-instrument="TC.json"></div>
+   <div id="Position5" class="big instrument" data-fgpanel-instrument="HSI.json"></div>
+   <div id="Position6" class="big instrument" data-fgpanel-instrument="VSI.json"></div>
+-  <div id="Position7" class="small instrument" data-fgpanel-instrument="RPM.json"></div>
++  <div id="Position7" class="big instrument" data-fgpanel-instrument="AOA.json"></div>
+ </body>
+ </html>
